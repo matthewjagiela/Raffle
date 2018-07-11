@@ -13,6 +13,15 @@
 		344033C120E170C000DBB7F6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 344033BF20E170C000DBB7F6 /* Main.storyboard */; };
 		344033C320E170C200DBB7F6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 344033C220E170C200DBB7F6 /* Assets.xcassets */; };
 		344033C620E170C200DBB7F6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 344033C420E170C200DBB7F6 /* LaunchScreen.storyboard */; };
+		344033D420E176CB00DBB7F6 /* icon_iPad.png in Resources */ = {isa = PBXBuildFile; fileRef = 344033CE20E176CB00DBB7F6 /* icon_iPad.png */; };
+		344033D520E176CB00DBB7F6 /* main_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 344033CF20E176CB00DBB7F6 /* main_icon.png */; };
+		344033D620E176CB00DBB7F6 /* icon_iPad2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 344033D020E176CB00DBB7F6 /* icon_iPad2x.png */; };
+		344033D720E176CB00DBB7F6 /* iPhone3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 344033D120E176CB00DBB7F6 /* iPhone3x.png */; };
+		344033D820E176CB00DBB7F6 /* iPhone2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 344033D220E176CB00DBB7F6 /* iPhone2x.png */; };
+		344033D920E176CB00DBB7F6 /* icon_iPadPro.png in Resources */ = {isa = PBXBuildFile; fileRef = 344033D320E176CB00DBB7F6 /* icon_iPadPro.png */; };
+		3456125A20F68F60009D7C15 /* WinnerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3456125920F68F60009D7C15 /* WinnerViewController.swift */; };
+		345FEC4320F447270022A066 /* EntreesHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 345FEC4220F447260022A066 /* EntreesHandler.swift */; };
+		345FEC4520F455F70022A066 /* PoolArrayHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 345FEC4420F455F70022A066 /* PoolArrayHandler.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +33,16 @@
 		344033C220E170C200DBB7F6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		344033C520E170C200DBB7F6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		344033C720E170C200DBB7F6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		344033CE20E176CB00DBB7F6 /* icon_iPad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_iPad.png; sourceTree = "<group>"; };
+		344033CF20E176CB00DBB7F6 /* main_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = main_icon.png; sourceTree = "<group>"; };
+		344033D020E176CB00DBB7F6 /* icon_iPad2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_iPad2x.png; sourceTree = "<group>"; };
+		344033D120E176CB00DBB7F6 /* iPhone3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iPhone3x.png; sourceTree = "<group>"; };
+		344033D220E176CB00DBB7F6 /* iPhone2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iPhone2x.png; sourceTree = "<group>"; };
+		344033D320E176CB00DBB7F6 /* icon_iPadPro.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_iPadPro.png; sourceTree = "<group>"; };
+		3456125820F68AC1009D7C15 /* Raffle.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Raffle.entitlements; sourceTree = "<group>"; };
+		3456125920F68F60009D7C15 /* WinnerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WinnerViewController.swift; sourceTree = "<group>"; };
+		345FEC4220F447260022A066 /* EntreesHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntreesHandler.swift; sourceTree = "<group>"; };
+		345FEC4420F455F70022A066 /* PoolArrayHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PoolArrayHandler.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +75,49 @@
 		344033B820E170C000DBB7F6 /* Raffle */ = {
 			isa = PBXGroup;
 			children = (
+				3456125820F68AC1009D7C15 /* Raffle.entitlements */,
+				344033DB20E1772D00DBB7F6 /* Handlers */,
+				344033DA20E1771E00DBB7F6 /* View Controllers */,
+				344033CD20E1721100DBB7F6 /* App Icons */,
 				344033B920E170C000DBB7F6 /* AppDelegate.swift */,
-				344033BB20E170C000DBB7F6 /* MasterViewController.swift */,
-				344033BD20E170C000DBB7F6 /* DetailViewController.swift */,
 				344033BF20E170C000DBB7F6 /* Main.storyboard */,
 				344033C220E170C200DBB7F6 /* Assets.xcassets */,
 				344033C420E170C200DBB7F6 /* LaunchScreen.storyboard */,
 				344033C720E170C200DBB7F6 /* Info.plist */,
 			);
 			path = Raffle;
+			sourceTree = "<group>";
+		};
+		344033CD20E1721100DBB7F6 /* App Icons */ = {
+			isa = PBXGroup;
+			children = (
+				344033CE20E176CB00DBB7F6 /* icon_iPad.png */,
+				344033D020E176CB00DBB7F6 /* icon_iPad2x.png */,
+				344033D320E176CB00DBB7F6 /* icon_iPadPro.png */,
+				344033D220E176CB00DBB7F6 /* iPhone2x.png */,
+				344033D120E176CB00DBB7F6 /* iPhone3x.png */,
+				344033CF20E176CB00DBB7F6 /* main_icon.png */,
+			);
+			path = "App Icons";
+			sourceTree = "<group>";
+		};
+		344033DA20E1771E00DBB7F6 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				344033BB20E170C000DBB7F6 /* MasterViewController.swift */,
+				344033BD20E170C000DBB7F6 /* DetailViewController.swift */,
+				3456125920F68F60009D7C15 /* WinnerViewController.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		344033DB20E1772D00DBB7F6 /* Handlers */ = {
+			isa = PBXGroup;
+			children = (
+				345FEC4220F447260022A066 /* EntreesHandler.swift */,
+				345FEC4420F455F70022A066 /* PoolArrayHandler.swift */,
+			);
+			path = Handlers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -99,6 +152,11 @@
 				TargetAttributes = {
 					344033B520E170C000DBB7F6 = {
 						CreatedOnToolsVersion = 10.0;
+						SystemCapabilities = {
+							com.apple.iCloud = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -125,9 +183,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				344033D920E176CB00DBB7F6 /* icon_iPadPro.png in Resources */,
 				344033C620E170C200DBB7F6 /* LaunchScreen.storyboard in Resources */,
 				344033C320E170C200DBB7F6 /* Assets.xcassets in Resources */,
+				344033D720E176CB00DBB7F6 /* iPhone3x.png in Resources */,
+				344033D620E176CB00DBB7F6 /* icon_iPad2x.png in Resources */,
+				344033D820E176CB00DBB7F6 /* iPhone2x.png in Resources */,
+				344033D420E176CB00DBB7F6 /* icon_iPad.png in Resources */,
 				344033C120E170C000DBB7F6 /* Main.storyboard in Resources */,
+				344033D520E176CB00DBB7F6 /* main_icon.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -140,7 +204,10 @@
 			files = (
 				344033BE20E170C000DBB7F6 /* DetailViewController.swift in Sources */,
 				344033BC20E170C000DBB7F6 /* MasterViewController.swift in Sources */,
+				345FEC4520F455F70022A066 /* PoolArrayHandler.swift in Sources */,
 				344033BA20E170C000DBB7F6 /* AppDelegate.swift in Sources */,
+				345FEC4320F447270022A066 /* EntreesHandler.swift in Sources */,
+				3456125A20F68F60009D7C15 /* WinnerViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -284,9 +351,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Raffle/Raffle.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = MCRTE5CC2K;
 				INFOPLIST_FILE = Raffle/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -294,7 +363,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.uApps.Raffle;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -302,9 +371,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Raffle/Raffle.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = MCRTE5CC2K;
 				INFOPLIST_FILE = Raffle/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -312,7 +383,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.uApps.Raffle;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

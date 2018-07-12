@@ -15,7 +15,7 @@ class EntreesHandler: NSObject {
         
         if(!UserDefaults.standard.bool(forKey: "firstSetup")){ //first time setup needs to be done
             print("First time setup needs to be done")
-            entrees = ["Matthew" : 0, "X" : 0] //Set this to be the list and the default number of tickets the person should have when first launching (0)
+            entrees = ["uApps" : 0] //Set this to be the list and the default number of tickets the person should have when first launching (0)
             NSUbiquitousKeyValueStore.default.set(entrees, forKey: "entrees") //Save the initial list to iCloud to be pulled from the macApp and for later use
             UserDefaults.standard.set(true, forKey: "firstSetup") //This means the list is populated so we can skip these next time this is opened
         }

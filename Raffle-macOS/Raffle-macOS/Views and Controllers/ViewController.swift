@@ -44,7 +44,6 @@ class ViewController: NSViewController, NSTableViewDataSource, NSTableViewDelega
             cellView.textField?.stringValue = "\(entrees.getTicketsForEntree(name: sortedEntrees[row]))"
         }
         else{
-            print("tickets")
             cellView.textField?.stringValue = sortedEntrees[row]
         }
         

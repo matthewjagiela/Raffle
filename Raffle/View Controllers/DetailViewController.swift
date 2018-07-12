@@ -48,8 +48,9 @@ class DetailViewController: UIViewController {
         updateTicketLabel() //Update the label
     }
     @IBAction func subtractTicket(_ sender: Any) { //Remove a ticket, save it to the dictionary, update the label
-        ticketNumber += 1
+        ticketNumber -= 1
         entrees.setTicketNumber(name: detailItem!.description, tickets: ticketNumber)
+        updateTicketLabel()
     }
     func updateTicketLabel(){ //Update the label with the actual ticket number
         ticketLabel.text = "\(ticketNumber)"

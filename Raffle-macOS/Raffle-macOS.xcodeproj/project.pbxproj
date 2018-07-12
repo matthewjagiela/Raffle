@@ -8,6 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		343D367D20F6AECB009D4125 /* iCloudHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 343D367C20F6AECB009D4125 /* iCloudHandler.swift */; };
+		343D369120F80705009D4125 /* icon@32.png in Resources */ = {isa = PBXBuildFile; fileRef = 343D368B20F80703009D4125 /* icon@32.png */; };
+		343D369320F80705009D4125 /* icon@64.png in Resources */ = {isa = PBXBuildFile; fileRef = 343D368D20F80704009D4125 /* icon@64.png */; };
+		343D369420F80705009D4125 /* main_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 343D368E20F80704009D4125 /* main_icon.png */; };
+		343D369520F80705009D4125 /* Retina@256.png in Resources */ = {isa = PBXBuildFile; fileRef = 343D368F20F80705009D4125 /* Retina@256.png */; };
+		343D369620F80705009D4125 /* Retina@512.png in Resources */ = {isa = PBXBuildFile; fileRef = 343D369020F80705009D4125 /* Retina@512.png */; };
+		343D369820F80766009D4125 /* Retina@128.png in Resources */ = {isa = PBXBuildFile; fileRef = 343D369720F80766009D4125 /* Retina@128.png */; };
 		34E6D13F20F6AAF600829EA2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34E6D13E20F6AAF600829EA2 /* AppDelegate.swift */; };
 		34E6D14120F6AAF600829EA2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34E6D14020F6AAF600829EA2 /* ViewController.swift */; };
 		34E6D14320F6AAF800829EA2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 34E6D14220F6AAF800829EA2 /* Assets.xcassets */; };
@@ -16,6 +22,12 @@
 
 /* Begin PBXFileReference section */
 		343D367C20F6AECB009D4125 /* iCloudHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iCloudHandler.swift; sourceTree = "<group>"; };
+		343D368B20F80703009D4125 /* icon@32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon@32.png"; sourceTree = "<group>"; };
+		343D368D20F80704009D4125 /* icon@64.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon@64.png"; sourceTree = "<group>"; };
+		343D368E20F80704009D4125 /* main_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = main_icon.png; sourceTree = "<group>"; };
+		343D368F20F80705009D4125 /* Retina@256.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Retina@256.png"; sourceTree = "<group>"; };
+		343D369020F80705009D4125 /* Retina@512.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Retina@512.png"; sourceTree = "<group>"; };
+		343D369720F80766009D4125 /* Retina@128.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Retina@128.png"; sourceTree = "<group>"; };
 		34E6D13B20F6AAF600829EA2 /* Raffle-macOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Raffle-macOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		34E6D13E20F6AAF600829EA2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		34E6D14020F6AAF600829EA2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -62,6 +74,19 @@
 			path = Handlers;
 			sourceTree = "<group>";
 		};
+		343D367E20F8066A009D4125 /* Icons */ = {
+			isa = PBXGroup;
+			children = (
+				343D368B20F80703009D4125 /* icon@32.png */,
+				343D368D20F80704009D4125 /* icon@64.png */,
+				343D368E20F80704009D4125 /* main_icon.png */,
+				343D369720F80766009D4125 /* Retina@128.png */,
+				343D368F20F80705009D4125 /* Retina@256.png */,
+				343D369020F80705009D4125 /* Retina@512.png */,
+			);
+			path = Icons;
+			sourceTree = "<group>";
+		};
 		34E6D13220F6AAF600829EA2 = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +106,7 @@
 		34E6D13D20F6AAF600829EA2 /* Raffle-macOS */ = {
 			isa = PBXGroup;
 			children = (
+				343D367E20F8066A009D4125 /* Icons */,
 				343D367B20F6AEB1009D4125 /* Handlers */,
 				343D367A20F6AEA1009D4125 /* Other */,
 				343D367920F6AE39009D4125 /* Views and Controllers */,
@@ -122,6 +148,11 @@
 				TargetAttributes = {
 					34E6D13A20F6AAF600829EA2 = {
 						CreatedOnToolsVersion = 10.0;
+						SystemCapabilities = {
+							com.apple.iCloud = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -149,7 +180,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				34E6D14320F6AAF800829EA2 /* Assets.xcassets in Resources */,
+				343D369520F80705009D4125 /* Retina@256.png in Resources */,
 				34E6D14F20F6AB8000829EA2 /* Main.storyboard in Resources */,
+				343D369120F80705009D4125 /* icon@32.png in Resources */,
+				343D369620F80705009D4125 /* Retina@512.png in Resources */,
+				343D369420F80705009D4125 /* main_icon.png in Resources */,
+				343D369320F80705009D4125 /* icon@64.png in Resources */,
+				343D369820F80766009D4125 /* Retina@128.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

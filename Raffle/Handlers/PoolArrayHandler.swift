@@ -37,9 +37,15 @@ class PoolArrayHandler: NSObject {
         else{
             let randomIndex = arc4random_uniform(UInt32(hatArray.count - 1)) //This is going to be what we draw out of the hat
             print(randomIndex) //DEBUG : Use to check and make sure the random index isnt higher or something
+            hatArray = randomizeHat() //Remove this line if you dont want to extra randomization....
             entrees.setTicketNumber(name: hatArray[Int(randomIndex)], tickets: 0) //We want to remove ALL of the tickets for the winner. This can be removed if someone can win more than once.
+            
+            print(hatArray)
             return hatArray[Int(randomIndex)]
         }
         
+    }
+    func randomizeHat() -> [String]{
+        return hatArray.shuffled()
     }
 }
